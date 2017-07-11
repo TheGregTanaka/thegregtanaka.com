@@ -1,10 +1,14 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome</title>
+	<title></title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="site.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="site.css">
 </head>
 <body>
 
@@ -17,11 +21,11 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-				<a href="#" class="navbar-brand">Greg</a>
+				<a href="index.php" target="_top" class="navbar-brand"><i class="fa fa-hashtag" aria-hidden="true"></i>loveGreg</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-nav-demo">
 				<ul class="nav navbar-nav">
-					<li><a href="about.html">About</a></li>
+					<li><a href="about.php" target="_top">About</a></li>
 					<li><a href="JK.wut">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -32,15 +36,5 @@
 		</div>
 	</nav>
 
-  <div class="container">
-
-  <div class="jumbotron">
-    <h1>It's almost a site now!</h1>
-    <p>I've added some super basic bootstrap and css to make it look better.</p> 
-  </div>
-
-
-<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
