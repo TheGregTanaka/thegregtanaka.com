@@ -1,5 +1,5 @@
 <?php
-include('navbar.php');
+include('demo-navbar.php');
 ?>
 
 <!DOCTYPE html>
@@ -14,12 +14,12 @@ include('navbar.php');
 <body>
 
 	<div class="container">
-		<a href="#"><div class="jumbotron">
+		<a href="#"><div class="jumbotron blocked">
 			<h1>Enter Main Site</h1>
 			<p>Coming soon!</p>
 		</div></a>
 
-		<a href="home.php"><div class="jumbotron">
+		<a href="demo-home.php"><div class="jumbotron">
 			<h1>Enter Demo Site</h1>
 		</div></a>
 	</div>

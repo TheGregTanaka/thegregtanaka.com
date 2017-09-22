@@ -23,11 +23,11 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-				<a href="home.php" target="_top" class="navbar-brand"><i class="fa fa-hashtag" aria-hidden="true"></i>loveGreg</a>
+				<a href="demo-home.php" target="_top" class="navbar-brand"><i class="fa fa-hashtag" aria-hidden="true"></i>loveGreg</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-nav-demo">
 				<ul class="nav navbar-nav">
-					<li><a href="about.php" target="_top">About</a></li>
+					<li><a href="demo-about.php" target="_top">About</a></li>
 					<li><a href="JK.wut">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
