@@ -31,7 +31,7 @@
 					<li><a href="JK.wut">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Nothing</a></li>
+					<li><a href="game.php">Nothing</a></li>
 					<li><a href="#">Also Nothing</a></li>
 				</ul>
 			</div>
