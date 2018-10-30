@@ -4,7 +4,7 @@ function game() {
 		var secretNumber = Math.random()
 		var winCondition = 100000;
 		var difficulty = prompt("What difficulty would you like to play on? Type 'e' for Easy, 'm' for Medium, 'h' for Hard, or 'i' for Insane").toLowerCase();
-			if (difficulty === 'i'){
+		if (difficulty === 'i'){
 			var secretNumber = (Math.round(secretNumber * 100000000000000));
 			// 100 trillion
 			var	winCondition = 50;
