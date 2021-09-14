@@ -1,40 +1,50 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import './styles.css';
+import { useState } from 'react';
+import logo from '../../parmesean.svg'
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
+import { Button } from '@material-ui/core';
 
-export default function Nav() {
-  const classes = useStyles();
+const Navbar = () => {
+    const [toggle, setToggle] = useState(false);
+    const toggle_menu = () => {
+        if(toggle) { setToggle(false); } else { setToggle(true); }
+    }
 
-  return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            TheGregTanaka
-          </Typography>
-          <Button color="inherit">asdf</Button>
-        </Toolbar>
-      </AppBar>
-    </div>
-  );
+    return (
+        <div>
+            <nav className="navbar">
+                <div className="navbar__container">
+                    <a href="/" id="navbar__logo">
+                      <img src={logo} className="logoSmall" alt="Greg"></img>
+                    </a>
+                    <div className={toggle ? "navbar__toggle is-active" : "navbar__toggle"} id="mobile-menu" onClick={toggle_menu}>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                    </div>
+                    <ul className={toggle ? "navbar__menu active" : "navbar__menu"}>
+                        <li className="navbar__item">
+                            <a href="/#" className="navbar__links">
+                            About Me
+                            </a>
+                        </li>
+                        <li className="navbar__item">
+                            <a href="/#" className="navbar__links">
+                            Projects
+                            </a>
+                        </li>
+                        <li className="navbar__btn">
+                            <a href="/#" className="button">
+                                b1
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    )
 }
+
+export default Navbar

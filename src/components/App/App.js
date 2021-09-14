@@ -1,7 +1,8 @@
 //import logo from './logo.svg';
-import logo from '../../parmesean.svg';
-import './App.css';
-import Nav from '../Nav/Nav2';
+import logo from '../../parmesean.svg'
+import './App.css'
+import Nav from '../Nav/Nav'
+import Footer from '../Footer/Footer'
 
 function App() {
   return (
@@ -19,8 +20,12 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
         </div>
       </header>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
